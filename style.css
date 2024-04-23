@@ -5,14 +5,14 @@
     --rose: #EAAC8B;
     --bg-dark: #527BA0;
     --light-gray: #E0DEDE;
-    --menu-height: 75px;
-        
+    --menu-height: 75px;    
 }
 
-*{box-sizing: border-box;
+* {
+    box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -31,18 +31,19 @@ h1, h2 {
     font-weight: 400;
 }
 
-h1{
+h1 {
     font-size: 44px;
 }
 
-h2{
+h2 {
     font-size: 24px;
 }
 
-p{
+p {
     color: var(--light-gray);
 }
-button{
+
+button {
     background-color: var(--pink);
     border: 0;
     border-radius: 16px;
@@ -53,22 +54,16 @@ button{
     cursor: pointer;
 }
 
-.secondary-button{
-    height: 80px;
-}
-
-.title-pink{
-    color: var(--pink);
-}
-
-.title-rose{
-    color: var(--rose);
-}
-
 header {
     height: calc(100vh - var(--menu-height));
     display: flex;
     align-items: center;
+}
+
+header .img-container img{
+    width: 80%;
+    border-radius: 10%;
+    margin-bottom: 15%;
 }
 
 header .container img {
@@ -103,26 +98,50 @@ nav {
     z-index: 99;
 }
 
-nav img{
+nav img {
     height: 45px;
 }
 
-nav ul{
+nav ul {
     width: 100%;
     display: flex;
     justify-content: space-around;
 }
 
-nav ul a{
+nav ul a {
     font-size: 24px;
     color: var(--rose);
     text-decoration: none;
     margin: 0 35px;
 }
 
-nav ul a svg{
+nav ul a svg {
     display: none;
 }
+
+footer {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.secondary-button{
+    height: 80px;
+}
+
+.title-pink {
+    color: var(--pink);
+}
+
+.title-rose {
+    color: var(--rose);
+    font-size: 44px;
+}
+
+.ola-principal {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+  }
 
 .about-us{
 display: flex;
@@ -157,9 +176,15 @@ padding: 100px;
     left: calc(50% - 70%/2 - 25px);
 }
 
-.about-us .img-container .line.rose{
+.about-us .img-container .line.rose {
 transform: rotate(-3.3deg);
 color: var(--rose);
+}
+
+.line-header {
+    color: var(--light-gray);
+    width: 90vw;
+    margin-top: 5vw;
 }
 
 .services {
@@ -197,18 +222,18 @@ color: var(--rose);
     margin-left: 10px;
 }
 
-.curriculum{
+.curriculum {
     padding: 0 100px;
     text-align: center;
 }
 
-.curriculum .container{
+.curriculum .container {
 display: flex;
 margin: 50px auto;
 max-width: 1200px;
 }
 
-.curriculum .container .content{
+.curriculum .container .content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -217,43 +242,36 @@ max-width: 1200px;
     width: 100%;
 }
 
-.curriculum .container .content .curriculum-info{
+.curriculum .container .content .curriculum-info {
     display: grid;
     grid-template-columns: 150px auto;
-    grid gap: 1rem;
+    grid-gap: 1rem;
     margin-bottom: 50px;
 }
 
-.contact{
+.contact {
     max-width: 700px;
     margin: 150px auto 70px;
     text-align: center;
     padding: 0 20px;
 }
 
-.contact h1{
+.contact h1 {
 width: fit-content;
 margin: 0 auto 40px;
 }
 
-.contact button{
+.contact button {
     margin: 40px auto;
 }
 
-.contact .social-media{
+.contact .social-media {
 max-width: 360px;
 margin: 50px auto 0;
 display: flex;
 justify-content: space-around;
 
 }
-
-footer{
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-
 
 /*RESPONSIVIDADE*/
 /* small desktops */
