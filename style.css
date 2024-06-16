@@ -286,7 +286,7 @@ justify-content: space-around;
 }
 
 .contact-form {
-    background: #000;
+    background: #000000;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -296,10 +296,12 @@ justify-content: space-around;
 
 .contact-form h2 {
     margin-bottom: 15px;
+    text-color: #000000;
 }
 
 .contact-form .form-group {
     margin-bottom: 15px;
+    text-color: #000000;
 }
 
 .contact-form label {
@@ -313,6 +315,7 @@ justify-content: space-around;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 3px;
+    text-color: #000000;
 }
 
 .contact-form button {
